@@ -47,13 +47,13 @@ class EligibilityCheck extends Component {
 
     eligibility = [
         <label><h2>ברכותינו!</h2>
-          <h4><p>הינך זכאי להחזר.<br/>
+          <h4><p>הינך זכאי/ת להחזר.<br/>
           להרשמה מהירה אונליין:</p></h4>
           <br/>
          <Link to='./registration'><Button autoFocus variant="light"
          className="btn-lg" type="button">
          להרשמה</Button></Link></label>,
-       <label><h5><p>לצערינו אינך זכאי להחזר כרגע<br/>
+       <label><h5><p>לצערינו אינך זכאי/ת להחזר כרגע<br/>
           תוכל לנסות שוב בשנה הבאה</p></h5>
           <Button autoFocus variant="light"
          className="btn-lg" onClick={() => {let copy = this.state.aler;
@@ -206,7 +206,7 @@ class EligibilityCheck extends Component {
         <div className="row">
           <div className="checkTi">
             <div className="offset-md-3 col-md-7">
-        <h1 className="ti"><b> בדיקת זכאות להחזר מס <br/>ללא עלות</b></h1> 
+        <h1 className="ti"><b> בדיקת זכאות להחזר מס</b></h1> 
         </div>
         {this.state.aler.isEligibility ?
           <Alert key="answer">

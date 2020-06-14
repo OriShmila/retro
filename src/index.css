@@ -26,8 +26,8 @@ body {
     background-image: url('images/contract.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
-    height: 18em;
+    background-size: 60%;
+    height: 16.5em;
     width: 100%;
     margin-bottom: 4em;
     text-align: center;
@@ -37,10 +37,10 @@ body {
     background-image: url('images/chack.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
-    height: 20em;
+    background-size: 60%;
+    height: 18em;
     width: 100%;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
     margin-top: 3em;
     text-align: center;
   }
@@ -49,8 +49,8 @@ body {
     background-image: url('images/contact.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
-    height: 18em;
+    background-size: 60%;
+    height: 16.5em;
     width: 100%;
     text-align: center;
     margin-top: 3em;
@@ -60,8 +60,8 @@ body {
     background-image: url('images/home.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
-    height: 18em;
+    background-size: 60%;
+    height: 19em;
     width: 100%;
     text-align: center;
     margin-top: 3em;
@@ -78,20 +78,40 @@ body {
     background-image: url('images/reg.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
-    height: 18em;
+    background-size: 60%;
+    height: 17.5em;
     width: 100%;
     text-align: center;
     margin-top: 3em;
   }
 
   .ti{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1cm;
-    margin-block-start:6em ;
+    font-size: 1.2cm;
+    margin-block-start:4.5em ;
     color: black;
-  
   }
+
+  .tiHome{
+    font-size: 1.2cm;
+    margin-block-start:4.5em ;
+    color: black;
+  }
+  .de{
+    margin-top: 1.5cm;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ans{
+  border-style: solid;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  background-color: rgb(243, 189, 39);
+  color: white;
+}
 }
 
 @media only screen and (min-width:1001px){
@@ -142,15 +162,16 @@ body {
     width: 100%;
     margin-top: 3em;
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
   }
 
   .homeMid{
     background-image: url('images/home2.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 25em;
+    height: 17em;
     width: 100%;
+    margin-bottom: 4rem;
   }
 
   .regTi{
@@ -164,12 +185,32 @@ body {
   }
 
  .ti{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 3.5em;
+   font-size: 5em;
    margin-right: 1em;
-   margin-block-start:2em ;
+   margin-block-start:1em ;
    color: black;
  }
+
+ .tiHome{
+  font-size: 5em;
+  margin-block-start:2em ;
+  color: black;
+}
+
+ .de{
+  margin-top: 1.5cm;
+  margin-right: 10%;
+}
+
+.ans{
+  border-style: solid;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1em;
+  width: 22em;
+  background-color: rgb(243, 189, 39);
+  color: white;
+}
 }
 .co{
   height: 2.5cm;
@@ -190,15 +231,6 @@ code {
     monospace;
 }
 
-.ans{
-  border-style: solid;
-  border-radius: 25px;
-  text-align: center;
-  padding: 1em;
-  width: 22em;
-  background-color: rgb(243, 189, 39);
-  color: white;
-}
 h1{
   color: rgb(4, 76, 99);
   margin-block-end: 0.7cm;
@@ -268,10 +300,7 @@ div[className^="col-"]{
   margin-bottom: 1cm;
 }
 
-.de{
-  margin-top: 1.5cm;
-  margin-right: 10%;
-}
+
 .conac{
   border-style: solid;
   border-radius: 25px;
@@ -312,17 +341,12 @@ h5{
   text-align: center;
 }
 
-.navBra{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
 .checks{
   color: rgb(2, 55, 73);
 }
 .homeButt{
-  margin-bottom: 3rem;
-  margin-top: 5rem;
+  margin-bottom: 4rem;
+  margin-top: 3.5rem;
   text-align: center;
 }
 
@@ -354,4 +378,66 @@ h5{
   cursor: pointer;
   font-weight: bold;
   color: #ffffff;
+}
+
+.reason{
+  text-align: center;
+}
+
+.homeBody{
+  text-align: center;
+}
+
+.boxReason{
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25px;
+  background-color: rgba(243, 189, 39, 0.753);
+  color:  black;
+  width: 98.9%;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  padding-top: 2rem ;
+}
+
+.cost{
+  background-image: url('images/cost.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.attention{
+  background-image: url('images/attention.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.why{
+  color: black;
+}
+
+.birocratic{
+  background-image: url('images/birocratic.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.profesion{
+  background-image: url('images/profesion.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 1em;
 }

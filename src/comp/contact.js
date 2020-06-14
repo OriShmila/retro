@@ -22,7 +22,7 @@ class Contact extends Component {
             alert (this.state.fields.firstName + ' פרטיך נכנסו למערכת נציגנו ייצרו איתך קשר');
          }
          else{
-            alert ('מצטערים יש תקלה באתר אנא נסה מאוחר יותר');
+            alert ('מצטערים יש תקלה במערכת אנא נסה מאוחר יותר');
          }
       })
    }

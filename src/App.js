@@ -25,11 +25,22 @@ class App extends Component {
           isBoy: ''},   
           check: [{},{},{}],
           aler: {isEligibility: false,
-                 answer: null}  
+                 answer: null},
+                 isOpen: false  
                 };
 
                   this.changeData = this.changeData.bind(this);
                   this.submitData = this.submitData.bind(this);
+                  this.toggl = this.toggl.bind(this)
+                  this.routing = this.routing.bind(this)
+              
+   }
+
+   i = 0;
+
+   toggl(){
+    this.setState({isOpen: (this.i % 2 === 0 ? true : false)})
+    this.i++
    }
 
    changeData(event, val){
@@ -76,19 +87,24 @@ class App extends Component {
 
    routing(){
     return(
-      <Navbar fixed="top" bg="info" variant="dark" expand="lg">
+      <Navbar fixed="top" bg="info" variant="dark" expand="lg" expanded={this.state.isOpen}
+       onToggle={()=> this.toggl()}>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
       <div className="container">
-        <Nav className="mr-auto">
-        <NavLink to="/" exact className="link" activeClassName="active" >דף הבית</NavLink>
-          <NavLink className="link" activeClassName="active" to="/eligibilityCheck">לבדיקת זכאות</NavLink>
-          <NavLink className="link" activeClassName="active" to="/contact">צור קשר</NavLink>
-          <NavLink className="link" activeClassName="active" to="/retroPlusContract">לתקנון החברה</NavLink>
+        <Nav className="mr-auto" onSelect>
+        <NavLink to="/" exact className="link" activeClassName="active"
+         onClick={()=> this.toggl()}>דף הבית</NavLink>
+          <NavLink className="link" activeClassName="active" to="/eligibilityCheck"
+           onClick={()=> this.toggl()}>לבדיקת זכאות</NavLink>
+          <NavLink className="link" activeClassName="active" to="/contact"
+           onClick={()=> this.toggl()}>צור קשר</NavLink>
+          <NavLink className="link" activeClassName="active" to="/retroPlusContract"
+           onClick={()=> this.toggl()}>לתקנון החברה</NavLink>
         </Nav>
         </div>
       </Navbar.Collapse>
-      <Navbar.Brand className="navBra" href="#home">Retro Plus</Navbar.Brand>
+      <Navbar.Brand className="navBra" href="#home">רטרו פלוס</Navbar.Brand>
     </Navbar>
     );
     };
