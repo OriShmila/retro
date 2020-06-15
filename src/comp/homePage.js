@@ -3,6 +3,10 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 class HomePage extends Component { 
+   componentDidMount(){
+      document.body.style.overflow = "visible"
+    }
+  
    render(){
       return(
          <div className="homeBody">
@@ -47,7 +51,7 @@ class HomePage extends Component {
                   לבדיקת זכאות</Button></Link></div>
               
                <h3><b>הייתי רוצה לשמוע עוד. מה ניתן לעשות?</b></h3>
-               <h5>צור עימנו קשר או השאר את פרטיך ונחזור אליך בהקדם, בעמוד יצירת הקשר\ כאן. </h5> 
+               <h5>צור עימנו קשר או השאר את פרטיך ונחזור אליך בהקדם, בעמוד יצירת הקשר/ כאן. </h5> 
                <div className="homeButt">
                <Link to='./contact'><Button variant="warning"
                    className="btn-lg" type="button">

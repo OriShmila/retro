@@ -59,7 +59,7 @@ class EligibilityCheck extends Component {
          className="btn-lg" onClick={() => {let copy = this.state.aler;
          copy.isEligibility = false;
          this.setState(copy)}} type="button">
-         לחזרה</Button></label>
+         לאישור</Button></label>
     ]
 
     constructor (props){
@@ -73,6 +73,10 @@ class EligibilityCheck extends Component {
       };
 
   } 
+
+  componentDidMount(){
+    document.body.style.overflow = "visible"
+  }
   
   handleChange(field, index, event){
     if (field === 'gender'){
@@ -208,23 +212,24 @@ class EligibilityCheck extends Component {
             <div className="offset-md-3 col-md-7">
         <h1 className="ti"><b> בדיקת זכאות להחזר מס</b></h1> 
         </div>
-        {this.state.aler.isEligibility ?
+        {this.state.aler.isEligibility ? ( document.body.style.overflow = "hidden",
           <Alert key="answer">
             <div className="ans offset-md-8">
               {this.eligibility[this.state.aler.answer]}
             </div> 
-          </Alert> : null
+            </Alert>) : this.componentDidMount()
         }
         </div>
         </div>
         <div className="container">
           <div className="row span-5">
-        <div className="checks">
+        <div className="checks offset-1 offset-md-0">
          <h3><b> ענה על השאלות ומיד תקבל תשובה בנוגע לזכאותך</b></h3> <br/>
          <h4><b> השאלון מתייחס ל-6 השנים האחרונות (2014 - 2019) </b></h4>
         </div>
-       <div className="contact">
         <form className="in" onSubmit={this.handleSubmit.bind(this)}>
+        <fieldset disabled={this.state.aler.isEligibility}>
+        <div className="contact offset-1 offset-md-0">
           <Details fields={this.state.fields} temp={this.state.temp}/><br/>
           <label><b>ציין את מגדרך (לצורך חישוב הזכאות):</b></label>&nbsp;
           <select required className="gender" onChange={this.handleChange.bind(this,"gender", '')}>
@@ -232,11 +237,13 @@ class EligibilityCheck extends Component {
                 <option value="man">גבר</option>
                 <option value="woman">אשה</option>
             </select>
-           <div  className="check">
-            <h4><b>בדיקת זכאות</b></h4><br/><ol className="list-group"><br/>{this.buton()}
+            </div> 
+           <div className="check">
+            <h4 className="secondTi"><b>בדיקת זכאות</b></h4><br/>
+            <ol className="list-group"><br/>{this.buton()}
             <Button variant="info" type="submit">לבדיקת זכאות</Button></ol></div>
+            </fieldset>
           </form>
-          </div> 
           </div>     
           </div>
           </div>

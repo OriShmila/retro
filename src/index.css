@@ -14,6 +14,21 @@ body {
 }
 
 @media only screen and (max-width:1000px){
+  .container{
+    width: 100%;
+    max-width: none;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .secondTi{
+    margin-right: 0.8cm;
+  }
+
+  .list-group{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
   .my{
     margin-top: 3em;
     background-image: url('images/logo.png');
@@ -38,7 +53,7 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
-    height: 18em;
+    height: 18.5em;
     width: 100%;
     margin-bottom: 5em;
     margin-top: 3em;
@@ -50,7 +65,7 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
-    height: 16.5em;
+    height: 17em;
     width: 100%;
     text-align: center;
     margin-top: 3em;
@@ -86,14 +101,14 @@ body {
   }
 
   .ti{
-    font-size: 1.2cm;
-    margin-block-start:4.5em ;
+    font-size: 1.4cm;
+    margin-block-start:4.1em ;
     color: black;
   }
 
   .tiHome{
-    font-size: 1.2cm;
-    margin-block-start:4.5em ;
+    font-size: 1.4cm;
+    margin-block-start:4.1em ;
     color: black;
   }
   .de{
@@ -112,6 +127,33 @@ body {
   background-color: rgb(243, 189, 39);
   color: white;
 }
+
+.ans1{
+  position: fixed;
+  top: 0;
+  margin-top: 5rem;
+  left: 0;
+  border-style: solid;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  background-color: rgb(243, 189, 39);
+  color: white;
+  z-index: 1000;
+}
+
+.boxReason{
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25px;
+  background-color: rgba(243, 189, 39, 0.753);
+  color:  black;
+  width: 100%;
+  padding-top: 2rem ;
+}
+
 }
 
 @media only screen and (min-width:1001px){
@@ -211,6 +253,37 @@ body {
   background-color: rgb(243, 189, 39);
   color: white;
 }
+
+.ans1{
+  position: fixed;
+  top: 0;
+  margin-top: 5rem;
+  left: 0;
+  margin-left: 36%;
+  border-style: solid;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1em;
+  width: 28%;
+  background-color: rgb(243, 189, 39);
+  color: white;
+  z-index: 1000;
+}
+
+.boxReason{
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25px;
+  background-color: rgba(243, 189, 39, 0.753);
+  color:  black;
+  width: 98.9%;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  padding-top: 2rem ;
+}
+
 }
 .co{
   height: 2.5cm;
@@ -388,19 +461,6 @@ h5{
   text-align: center;
 }
 
-.boxReason{
-  text-align: center;
-  border-style: solid;
-  border-color: white;
-  border-radius: 25px;
-  background-color: rgba(243, 189, 39, 0.753);
-  color:  black;
-  width: 98.9%;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  padding-top: 2rem ;
-}
 
 .cost{
   background-image: url('images/cost.png');
@@ -441,3 +501,4 @@ h5{
   width: 100%;
   margin-bottom: 1em;
 }
+

@@ -3,6 +3,7 @@ import Details from './details';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
+import Alert from 'react-bootstrap/Alert';
 
 class Registration extends Component { 
    errors= {didAgree: 'יש לקרוא את החוזה', id: "מספר תעודת זהות אינו חוקי"};
@@ -11,9 +12,39 @@ class Registration extends Component {
       super(props);
       this.state = {fields: Object.assign({},this.props.fields),
                     temp:  Object.assign({},this.props.temp), 
+                    isReg: false,
+                    isSuccess: null
                    };
+      this.answer = this.answer.bind(this);
    }
-   
+
+   componentDidMount(){
+      document.body.style.overflow = "visible"
+    }
+  
+    answer(){
+      if (this.state.isSuccess === true){
+         return(
+            <label><h5><p>{this.state.fields.firstName}
+               לצערינו אינך זכאי/ת להחזר כרגע<br/>
+            תוכל לנסות שוב בשנה הבאה</p></h5>
+           <Button autoFocus variant="light"
+            className="btn-lg" onClick={() => {
+            this.setState({isReg: false})}} type="button">
+            לאישור </Button></label>
+         )
+      }
+      else{
+         return(
+            <label><h5><p>מצטערים יש תקלה במערכת אנא נסה מאוחר יותר</p></h5>
+           <Button autoFocus variant="light"
+            className="btn-lg" onClick={() => {
+            this.setState({isReg: false})}} type="button">
+            לאישור </Button></label>
+         )
+      }
+   }
+    
    async handleSubmit(event) {
       event.preventDefault();
 
@@ -27,12 +58,14 @@ class Registration extends Component {
             console.log("send reg")
             this.props.submitData("registration", this.state, true).then((val)=>{
                if (val){
-                  alert (this.state.fields.firstName + ' פרטיך נכנסו למערכת נציגנו ייצרו איתך קשר');
+                  this.setState({isSuccess: true});
                }
                else{
-                  alert ('מצטערים יש תקלה באתר אנא נסה מאוחר יותר');
+                  this.setState({isSuccess: false});
                }
-            });
+            })
+      
+            this.setState({isReg: true}) 
          }
       }
    }
@@ -115,6 +148,13 @@ class Registration extends Component {
   render(){
    return(
       <div className="page">
+          {this.state.isReg ? ( document.body.style.overflow = "hidden",
+          <Alert key="answer">
+            <div className="ans1">
+              {this.answer()}
+            </div> 
+            </Alert>) : this.componentDidMount()
+        }
         <div className="row">
           <div className="regTi">
             <div className="offset-md-4 col-md-5">
@@ -127,7 +167,7 @@ class Registration extends Component {
          <div className="offset-3"/>
              <div className="inDetail">
              <Form className="in" onSubmit={this.handleSubmit.bind(this)}>
-             <fieldset>
+             <fieldset disabled={this.state.isReg}>
             <Details fields={this.state.fields} temp={this.state.temp}/><br/>
               <label><b>תעודת זהות:</b></label><br/>
               <input type="text" size="9" maxLength="9" placeholder="ת.ז."

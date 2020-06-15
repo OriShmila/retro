@@ -3,6 +3,10 @@ import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 
 class retroPlusContract extends Component { 
+    componentDidMount(){
+        document.body.style.overflow = "visible"
+      }
+    
    handleClick(){
       this.props.changeData(false);
    }
