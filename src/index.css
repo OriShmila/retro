@@ -1,44 +1,43 @@
 body {
   direction: rtl;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 1rem;
-  background-color:rgb(236, 245, 245);
+  background-color: rgb(236, 245, 245);
   font-size: 16px;
   color: rgb(2, 54, 88);
-
 }
 
-@media only screen and (max-width:1000px){
-  .container{
+@media only screen and (max-width: 1000px) {
+  .container {
     width: 100%;
     max-width: none;
     padding: 0%;
     margin: 0%;
   }
 
-  .secondTi{
+  .secondTi {
     margin-right: 0.8cm;
   }
 
-  .list-group{
+  .list-group {
     margin-right: 2%;
     margin-left: 2%;
   }
-  .my{
+  .my {
     margin-top: 3em;
-    background-image: url('images/logo.png');
+    background-image: url("images/logo.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 30%;
   }
 
-  .contractTi{
-    background-image: url('images/contract.png');
+  .contractTi {
+    background-image: url("images/contract.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
@@ -48,8 +47,8 @@ body {
     text-align: center;
     margin-top: 3em;
   }
-  .checkTi{
-    background-image: url('images/chack.png');
+  .checkTi {
+    background-image: url("images/chack.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
@@ -59,9 +58,9 @@ body {
     margin-top: 3em;
     text-align: center;
   }
-  
-  .conTi{
-    background-image: url('images/contact.png');
+
+  .conTi {
+    background-image: url("images/contact.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
@@ -71,8 +70,8 @@ body {
     margin-top: 3em;
   }
 
-  .homeTi{
-    background-image: url('images/home.png');
+  .homeTi {
+    background-image: url("images/home.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
@@ -82,15 +81,15 @@ body {
     margin-top: 3em;
   }
 
-  .homeMid{
-    background-image: url('images/home2.png');
+  .homeMid {
+    background-image: url("images/home2.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 23em;
     width: 100%;
   }
-  .regTi{
-    background-image: url('images/reg.png');
+  .regTi {
+    background-image: url("images/reg.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 60%;
@@ -100,115 +99,119 @@ body {
     margin-top: 3em;
   }
 
-  .ti{
+  .ti {
     font-size: 1.4cm;
-    margin-block-start:4.1em ;
+    margin-block-start: 4.1em;
     color: black;
   }
 
-  .tiHome{
+  .tiHome {
     font-size: 1.4cm;
-    margin-block-start:4.1em ;
+    margin-block-start: 4.1em;
     color: black;
   }
-  .de{
+  .de {
     margin-top: 1.5cm;
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+
+  .ans {
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    background-color: rgb(243, 189, 39);
+    color: white;
+  }
+
+  .ans1 {
+    position: fixed;
+    top: 0;
+    margin-top: 5rem;
+    left: 0;
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    background-color: rgb(243, 189, 39);
+    color: white;
+    z-index: 1000;
+  }
+
+  .boxReason {
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    background-color: rgba(243, 189, 39, 0.753);
+    color: black;
+    width: 100%;
+    padding-top: 2rem;
+  }
 }
 
-.ans{
-  border-style: solid;
-  border-radius: 25px;
-  text-align: center;
-  padding: 1em;
-  width: 100%;
-  background-color: rgb(243, 189, 39);
-  color: white;
-}
-
-.ans1{
-  position: fixed;
-  top: 0;
-  margin-top: 5rem;
-  left: 0;
-  border-style: solid;
-  border-radius: 25px;
-  text-align: center;
-  padding: 1em;
-  width: 100%;
-  background-color: rgb(243, 189, 39);
-  color: white;
-  z-index: 1000;
-}
-
-.boxReason{
-  text-align: center;
-  border-style: solid;
-  border-color: white;
-  border-radius: 25px;
-  background-color: rgba(243, 189, 39, 0.753);
-  color:  black;
-  width: 100%;
-  padding-top: 2rem ;
-}
-
-}
-
-@media only screen and (min-width:1001px){
-  .my{
+@media only screen and (min-width: 1001px) {
+  .my {
     margin-top: 3em;
-    background-image: url('images/logo.png');
+    background-image: url("images/logo.png");
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: 15%;
   }
 
-  .contractTi{
-    background-image: url('images/contract.png');
+  .contractTi {
+    background-image: url("images/contract.png");
     background-repeat: no-repeat;
     background-position: right top;
-    height: 25em;
+    height: 18em;
     width: 100%;
     margin-bottom: 4em;
     text-align: center;
     margin-top: 3em;
-  }
-  
-  .checkTi{
-    background-image: url('images/chack.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    height: 25em;
-    width: 100%;
-    margin-bottom: 4em;
-    margin-top: 3em;
-    text-align: center;
-  }
-  
-  .conTi{
-    background-image: url('images/contact.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    height: 25em;
-    width: 100%;
-    margin-top: 3em;
-    text-align: center;
-  }
-  
-  .homeTi{
-    background-image: url('images/home.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    height: 25em;
-    width: 100%;
-    margin-top: 3em;
-    text-align: center;
-    margin-bottom: 4em;
+    background-size: 30%;
   }
 
-  .homeMid{
-    background-image: url('images/home2.png');
+  .checkTi {
+    background-image: url("images/chack.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 18em;
+    width: 100%;
+    margin-bottom: 4em;
+    margin-top: 3em;
+    text-align: center;
+    background-size: 30%;
+  }
+
+  .conTi {
+    background-image: url("images/contact.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 18em;
+    width: 100%;
+    margin-top: 3em;
+    text-align: center;
+    background-size: 30%;
+  }
+
+  .homeTi {
+    background-image: url("images/home.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 18em;
+    width: 100%;
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 4em;
+    background-size: 30%;
+  }
+
+  .homeMid {
+    background-image: url("images/home2.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 17em;
@@ -216,150 +219,149 @@ body {
     margin-bottom: 4rem;
   }
 
-  .regTi{
-    background-image: url('images/reg.png');
+  .regTi {
+    background-image: url("images/reg.png");
     background-repeat: no-repeat;
     background-position: right top;
-    height: 25em;
+    height: 18em;
     width: 100%;
     margin-top: 3em;
     text-align: center;
+    background-size: 30%;
   }
 
- .ti{
-   font-size: 5em;
-   margin-right: 1em;
-   margin-block-start:1em ;
-   color: black;
- }
+  .ti {
+    font-size: 4.5em;
+    margin-right: 1em;
+    margin-block-start: 1em;
+    color: black;
+  }
 
- .tiHome{
-  font-size: 5em;
-  margin-block-start:2em ;
-  color: black;
-}
+  .tiHome {
+    font-size: 4.5em;
+    margin-block-start: 1.2em;
+    color: black;
+  }
 
- .de{
-  margin-top: 1.5cm;
-  margin-right: 10%;
-}
+  .de {
+    margin-top: 1.5cm;
+    margin-right: 10%;
+  }
 
-.ans{
-  border-style: solid;
-  border-radius: 25px;
-  text-align: center;
-  padding: 1em;
-  width: 22em;
-  background-color: rgb(243, 189, 39);
-  color: white;
-}
+  .ans {
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1em;
+    width: 22em;
+    background-color: rgb(243, 189, 39);
+    color: white;
+  }
 
-.ans1{
-  position: fixed;
-  top: 0;
-  margin-top: 5rem;
-  left: 0;
-  margin-left: 36%;
-  border-style: solid;
-  border-radius: 25px;
-  text-align: center;
-  padding: 1em;
-  width: 28%;
-  background-color: rgb(243, 189, 39);
-  color: white;
-  z-index: 1000;
-}
+  .ans1 {
+    position: fixed;
+    top: 0;
+    margin-top: 5rem;
+    left: 0;
+    margin-left: 36%;
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1em;
+    width: 28%;
+    background-color: rgb(243, 189, 39);
+    color: white;
+    z-index: 1000;
+  }
 
-.boxReason{
-  text-align: center;
-  border-style: solid;
-  border-color: white;
-  border-radius: 25px;
-  background-color: rgba(243, 189, 39, 0.753);
-  color:  black;
-  width: 98.9%;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  padding-top: 2rem ;
+  .boxReason {
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    background-color: rgba(243, 189, 39, 0.753);
+    color: black;
+    width: 98.9%;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    padding-top: 2rem;
+  }
 }
-
-}
-.co{
+.co {
   height: 2.5cm;
 }
 
-.link{
+.link {
   margin-left: 2cm;
   color: white;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
 
-.active{
+.active {
   color: darkblue;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-h1{
+h1 {
   color: rgb(4, 76, 99);
   margin-block-end: 0.7cm;
 }
-.check{
+.check {
   margin-block-start: 1cm;
-  line-height: 3px; 
+  line-height: 3px;
 }
 
-.list{
+.list {
   font-size: 1em;
-  line-height:23px;
-
+  line-height: 23px;
 }
 
-div[className^="col-"]{
+div[className^="col-"] {
   height: 100px;
 }
 
-.contact{
- margin-block-start: 1em;
- line-height: 15px;
+.contact {
+  margin-block-start: 1em;
+  line-height: 15px;
 }
 
-.inDetail{
+.inDetail {
   margin-top: 1cm;
   border-style: solid;
   border-radius: 200px 200px;
   border-color: rgb(3, 93, 122);
   text-align: center;
   line-height: 30px;
-  background-color: rgba(11, 120, 170, 0.164);   
+  background-color: rgba(11, 120, 170, 0.164);
   color: rgb(4, 76, 99);
   width: 34rem;
   height: 53.5rem;
   padding: 3rem;
 }
 
-.in select:invalid{
+.in select:invalid {
   color: darkred;
 }
-.in input:invalid{
+.in input:invalid {
   color: darkred;
 }
 
-.botFile{
+.botFile {
   width: 20em;
   margin-top: 0px;
 }
 
-.eror{
+.eror {
   color: darkred;
   font-size: 0.8em;
 }
 
-.userdetail{
+.userdetail {
   border-style: solid;
   border-radius: 25px;
   border-color: rgb(3, 93, 122);
@@ -368,13 +370,12 @@ div[className^="col-"]{
   height: 12cm;
   padding-top: 1cm;
   line-height: 0.7cm;
-  background-color: rgba(11, 120, 170, 0.164);   
+  background-color: rgba(11, 120, 170, 0.164);
   color: rgb(4, 76, 99);
   margin-bottom: 1cm;
 }
 
-
-.conac{
+.conac {
   border-style: solid;
   border-radius: 25px;
   border-color: rgb(3, 93, 122);
@@ -383,21 +384,21 @@ div[className^="col-"]{
   height: 12cm;
   padding-top: 1cm;
   line-height: 0.7cm;
-  background-color: rgba(11, 120, 170, 0.164);   
+  background-color: rgba(11, 120, 170, 0.164);
   color: rgb(4, 76, 99);
 }
 
-h5{
+h5 {
   line-height: 1cm;
   text-align: center;
 }
 
-.span-2-ti{
+.span-2-ti {
   font-size: 4em;
   color: rgb(4, 76, 99);
   margin-top: 1cm;
 }
-.previewo{
+.previewo {
   border-style: solid;
   border-width: 1px;
   border-color: blue;
@@ -405,19 +406,19 @@ h5{
   text-align: center;
 }
 
-.md-mycontainer{
+.md-mycontainer {
   margin-right: 7em;
   margin-left: 15em;
 }
 
-.end{
+.end {
   text-align: center;
 }
 
-.checks{
+.checks {
   color: rgb(2, 55, 73);
 }
-.homeButt{
+.homeButt {
   margin-bottom: 4rem;
   margin-top: 3.5rem;
   text-align: center;
@@ -440,7 +441,7 @@ h5{
   padding: 15px;
   border: 1px solid #dddddd;
   margin-bottom: 15px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 .login-form input[type="submit"] {
   width: 100%;
@@ -453,17 +454,16 @@ h5{
   color: #ffffff;
 }
 
-.reason{
+.reason {
   text-align: center;
 }
 
-.homeBody{
+.homeBody {
   text-align: center;
 }
 
-
-.cost{
-  background-image: url('images/cost.png');
+.cost {
+  background-image: url("images/cost.png");
   background-repeat: no-repeat;
   background-position: center top;
   height: 3em;
@@ -471,8 +471,8 @@ h5{
   margin-bottom: 1em;
 }
 
-.attention{
-  background-image: url('images/attention.png');
+.attention {
+  background-image: url("images/attention.png");
   background-repeat: no-repeat;
   background-position: center top;
   height: 3em;
@@ -480,12 +480,12 @@ h5{
   margin-bottom: 1em;
 }
 
-.why{
+.why {
   color: black;
 }
 
-.birocratic{
-  background-image: url('images/birocratic.png');
+.birocratic {
+  background-image: url("images/birocratic.png");
   background-repeat: no-repeat;
   background-position: center top;
   height: 3em;
@@ -493,12 +493,11 @@ h5{
   margin-bottom: 1em;
 }
 
-.profesion{
-  background-image: url('images/profesion.png');
+.profesion {
+  background-image: url("images/profesion.png");
   background-repeat: no-repeat;
   background-position: center top;
   height: 3em;
   width: 100%;
   margin-bottom: 1em;
 }
-
